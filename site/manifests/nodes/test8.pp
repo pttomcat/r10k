@@ -1,4 +1,4 @@
-node 'test8' {
+node 'test8.home' {
   
   profile::base ;
 
