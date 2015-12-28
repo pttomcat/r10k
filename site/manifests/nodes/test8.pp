@@ -1,5 +1,5 @@
 node 'test8' {
   
-  role::base ;
+  profile::base ;
 
 } 
