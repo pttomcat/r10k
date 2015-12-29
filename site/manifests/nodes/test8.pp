@@ -1,5 +1,5 @@
 node 'test8.home' {
   
-  profile::base ;
+include  profile::base
 
 } 
