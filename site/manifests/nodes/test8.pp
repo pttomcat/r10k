@@ -1,5 +1,8 @@
 node 'test8.home' {
   
-include  profile::bas
+include  profile::base
+Tesss
+ss
+
 
 } 
