@@ -2,6 +2,6 @@ hiera_include('classes')
 
 node 'test08.home' {
 
- include profile::base 
+include  profile::base
 
 }
