@@ -1,6 +1,6 @@
 class roles::wordpress::apache {
 
-class { "apache": }
+class { "::apache": }
 
 #  package { 'apache2':
 #  ensure  =>  present ;
