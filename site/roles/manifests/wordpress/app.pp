@@ -6,7 +6,7 @@ class roles::wordpress::app  {
          db_user     =>  'wordpress',
          db_password =>  'password',
          install_url =>  'wordpress.home',
-         install_dir =>  '/var/www/wordpress',`
+         install_dir =>  '/var/www/wordpress',
    }
 
 
