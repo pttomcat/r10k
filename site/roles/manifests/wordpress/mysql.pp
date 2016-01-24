@@ -1,7 +1,7 @@
 class ::wordpress::mysql  {
 
-  package { 'mysql' 
-  ensure  =>  peresent 
+  package { 'mysql':
+  ensure   =>  peresent ;
   }
 
 
