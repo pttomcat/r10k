@@ -1,7 +1,7 @@
 class roles::wordpress::apache {
 
-  package { 'apache2'
-   ensure  =>  present
+  package { 'apache2':
+   ensure  =>  present ;
   }
 
   include  ::apache::vhost { 'wordpress.home':
