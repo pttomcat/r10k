@@ -1,4 +1,4 @@
-class roles::wordpress:app  {
+class roles::wordpress::app  {
 
      class  { '::wordpress':
          wp_owner    =>  'wordpress',
