@@ -11,8 +11,8 @@ class roles::wordpress::mysql  {
 
   }
 
-  ::mysql::db  { 'wordpress':
-  user     =>  'wordpress',
+  ::mysql::db  { 'wordpress1':
+  user     =>  'wordpress1',
   password =>  'password',
   host     =>  'localhost',
   grant    =>  ['SELECT', 'UPDATE' , 'ALL'],
