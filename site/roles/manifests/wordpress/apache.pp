@@ -1,10 +1,12 @@
 class roles::wordpress::apache {
 
-  package { 'apache2':
-   ensure  =>  present ;
-  }
+class { "apache": }
 
-  class  ::apache::vhost { 'wordpress.home':
+#  package { 'apache2':
+#  ensure  =>  present ;
+# }
+
+  apache::vhost { 'wordpress.home':
   port    =>  '80',
   docroot =>  '/var/www/wordpress',
   }
