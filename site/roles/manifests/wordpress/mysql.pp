@@ -1,7 +1,7 @@
 class ::wordpress::mysql  {
 
   package { 'mysql' 
-  ensure  =>  installed ;
+  ensure  =>  peresent 
   }
 
 
