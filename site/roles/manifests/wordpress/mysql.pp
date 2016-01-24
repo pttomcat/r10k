@@ -1,4 +1,4 @@
-class ::wordpress::mysql  {
+class roles::wordpress::mysql  {
 
   package { 'mysql':
   ensure   =>  peresent ;
