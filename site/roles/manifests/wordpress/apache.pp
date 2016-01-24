@@ -1,6 +1,7 @@
 class roles::wordpress::apache {
 
 class { "::apache": }
+ include ::stdlib
 
 #  package { 'apache2':
 #  ensure  =>  present ;
