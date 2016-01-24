@@ -4,7 +4,7 @@ class roles::wordpress::apache {
    ensure  =>  present ;
   }
 
-  include  ::apache::vhost { 'wordpress.home':
+  class  ::apache::vhost { 'wordpress.home':
   port    =>  '80',
   docroot =>  '/var/www/wordpress',
   }
