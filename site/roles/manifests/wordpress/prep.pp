@@ -1,4 +1,4 @@
-class ::wordpress::prep {
+class roles::wordpress::prep {
   
  file { '/var/www/wordpress':
     ensure => 'directory',
@@ -14,7 +14,7 @@ class ::wordpress::prep {
   user { 'wordpress':
     ensure   => present,
     gid      => 'wordpress',
-    password => 'password'",
+    password => 'password',
     home     => '/var/www/wordpress',
   }
 

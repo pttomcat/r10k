@@ -1,7 +1,7 @@
 hiera_include('classes')
 
-node 'test08.home' {
+node 'test8.home' {
 
-include  role::wordpress
+include  roles::wordpress
 
 }
