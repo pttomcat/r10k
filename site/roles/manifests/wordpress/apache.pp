@@ -7,7 +7,7 @@ class { "::apache": }
 #  ensure  =>  present ;
 # }
 
-  apache::vhost { 'wordpress.home':
+  ::apache::vhost { 'wordpress.home':
   port    =>  '80',
   docroot =>  '/var/www/wordpress',
   }

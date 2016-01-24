@@ -1,8 +1,8 @@
 class roles::wordpress::mysql  {
 
-  package { 'mysql':
-  ensure   =>  peresent ;
-  }
+  #  package { 'mysql':
+  #  ensure   =>  peresent ;
+  #}
 
 
  class  { '::mysql::server':
