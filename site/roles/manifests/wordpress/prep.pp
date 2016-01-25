@@ -1,6 +1,6 @@
 class roles::wordpress::prep {
  
- packages {'php5':
+ package {'php5':
    ensure => installed
  }
  file { '/var/www/wordpress':
