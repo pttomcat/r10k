@@ -1,5 +1,8 @@
 class roles::wordpress::prep {
-  
+ 
+ packages {'php5':
+   ensure => installed
+ }
  file { '/var/www/wordpress':
     ensure => 'directory',
     owner  => 'wordpress',
