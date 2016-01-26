@@ -1,7 +1,8 @@
 class roles::wordpress::apache {
-  class { "::apache": }
+
+  class { '::apache': mpm_module => 'prefork', }
+  class { '::apache::mod::php': 
   include ::stdlib
-  class { 'apache::mod::php': } 
 #  package { 'apache2':
 #  ensure  =>  present ;
 # }
