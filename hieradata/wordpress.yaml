@@ -1,2 +1,2 @@
 ---
- roles::wordpress::app::install_dir: '/var/www/wordpress2'
+ app::install_dir: '/var/www/wordpress2'
