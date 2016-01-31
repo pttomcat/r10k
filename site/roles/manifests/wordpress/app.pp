@@ -1,5 +1,5 @@
 class roles::wordpress::app  {
-  $install_dir = hiera('roles::wordpress::app::install_dir')
+  $install_dir = hiera('app::install_dir')
      class  { '::wordpress':
          wp_owner    =>  'wordpress',
          wp_group    =>  'wordpress',
