@@ -4,7 +4,7 @@ class roles::wordpress {
   include roles::wordpress::mysql
   include roles::wordpress::apache
   include roles::wordpress::app
-  include roles::ntp
+  include roles::ntp::init.pp
 
 }
 

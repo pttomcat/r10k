@@ -1,4 +1,4 @@
-class ntp (
+class roles::ntp (
       $config            = $ntp::params::config,
       $config_template   = $ntp::params::config_template,
       $servers           = $ntp::params::servers,

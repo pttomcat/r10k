@@ -1,4 +1,4 @@
-class ntp::params {
+class roles::ntp::params {i
 
       $config           =  '/etc/ntp.conf'
       $config_template   = 'ntp/ntp.conf.erb',
