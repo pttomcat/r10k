@@ -1,0 +1,40 @@
+# ntp.conf manage by puppet. ajanzade 02022016
+#
+#
+tinker panic 0
+
+
+# Permit time synchronization with our time source, but do not
+# # permit the source to query or modify the service on this system.
+ restrict -4 default kod nomodify notrap nopeer noquery
+ restrict -6 default kod nomodify notrap nopeer noquery
+ restrict 127.0.0.1
+ restrict ::1
+#
+#
+#
+# # Set up servers for ntpd with next options:
+# # server - IP address or DNS name of upstream NTP server
+# # iburst - allow send sync packages faster if upstream unavailable
+# # prefer - select preferrable server
+# # minpoll - set minimal update frequency
+# # maxpoll - set maximal update frequency
+#
+#
+
+
+
+<% [@servers].flatten.each do |server| -%>
+<% end -%>
+
+
+
+
+
+
+
+#
+#
+# # Driftfile.
+# driftfile /var/lib/ntp/drift
+#
